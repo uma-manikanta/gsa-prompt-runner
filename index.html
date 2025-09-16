@@ -30,9 +30,13 @@
         function tryall() {
             let h_links = document.getElementsByTagName('a')
             Array.from(h_links).forEach(link => {
-                link.dispatchEvent(new MouseEvent('click'));
+                setInterval(() => {
+                    link.dispatchEvent(new MouseEvent('click'));
+                    console.log("Prompt" + link.src + "launched");
+                }, 1000);
             });
         }
     </script>
 </body>
+
 </html>
