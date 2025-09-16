@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: white;
+            background: rgb(5, 189, 235);
+            text-align: center;
+            width: 200px;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://aiskillshouse.com/student/qr-mediator.html?uid=5684&promptId=6" target="_blank">Prompt 1</a>
+    <a href="https://aiskillshouse.com/student/qr-mediator.html?uid=5684&promptId=13" target="_blank">Prompt 2</a>
+    <a href="https://aiskillshouse.com/student/qr-mediator.html?uid=5684&promptId=14" target="_blank">Prompt 3</a>
+    <a href="https://aiskillshouse.com/student/qr-mediator.html?uid=5684&promptId=15" target="_blank">Prompt 4</a>
+    <a href="https://aiskillshouse.com/student/qr-mediator.html?uid=5684&promptId=16" target="_blank">Prompt 5</a>
+    
+    <button onclick="tryall()">Try all</button>
+    <script>
+        function tryall() {
+            let h_links = document.getElementsByTagName('a')
+            Array.from(h_links).forEach(link => {
+                link.dispatchEvent(new MouseEvent('click'));
+            });
+        }
+    </script>
+</body>
+</html>
